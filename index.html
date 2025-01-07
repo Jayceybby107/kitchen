@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta lang="en">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="A HTML and CSS template for startup websites.">
+        <title>kitchen sink template</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <!-- Side Navigation -->
+        <nav class="side-nav">
+            <ul>
+                <li>Side Navigation</li>
+                <li onclick="closeSideNav()">Close &times</li>
+                <li><a href="#">Link 1</a></li>
+                <li><a href="#">Link 2</a></li>
+                <li><a href="#">Link 3</a></li>
+                <li><a href="#">Link 4</a></li>
+            </ul>      
+        </nav>
+        <!-- Header -->
+        <header class="header white-on-black">
+            <i class="fa fa-bars fa-lg" onclick="openSideNav()"></i>
+            <div class="header-main">
+                <h4>Beautiful responsive web sites</h2>
+                <h1>Built with w3.css</h1>
+                <button onclick="showModal()">Learn w3.css</button>
+            </div>
+        </header>
+        <!-- Modal dialog -->
+        <div class="modal">
+            <div class="modal-content">
+                <header>
+                    <span class="close-modal" onclick="closeModal()">&times;</span>
+                    <p>Oh snap! We just showed you a modal..</p>
+                    <p>Because we can &#128578</i></p>  
+                </header>
+                <div class="modal-main">
+                    <p>Cool huh? Ok, enough teasing around..</p>
+                    <p>Go to our <a href="https://www.w3schools.com/w3css/default.asp">W3.CSS Tutorial</a> to learn more!</p>
+                </div>
+                <footer>
+                    <p>Modal footer</p>
+                </footer>
+            </div>
+        </div>
+        
+        <!-- Main -->
+        <main class="main-grid">
+            
+            <!-- Features -->
+            <section class="features">
+                <div class="feature">
+                    <h3>Responsive</h3>
+                    <i class="fa fa-desktop large-icon"></i>
+                    <ul>
+                        <li>Built-in responsiveness</li>
+                        <li>Mobile first fluid grid</li>
+                        <li>Fits any screen sizes</li>
+                        <li>PC Tablet and Mobile</li>
+                    </ul>
+                </div>
+                <div class="feature">
+                    <h3>Standard CSS</h3>
+                    <i class="fa fa-css3 large-icon"></i>
+                    <ul>
+                        <li>Standard CSS only</li>
+                        <li>Easy to learn</li>
+                        <li>No need for jQuery</li>
+                        <li>No JavaScript library</li>
+                    </ul>
+                </div>
+                <div class="feature">
+                    <h3>Design</h3>
+                    <i class="fa fa-diamond large-icon"></i>
+                    <ul>
+                        <li>Paper like design</li>
+                        <li>Bold colors and shadows</li>
+                        <li>Equal across platforms</li>
+                        <li>Equal across devices</li>
+                    </ul>
+                </div>
+            </section>
+            
+            <!-- Color Classes -->
+            <section class="color">
+                <hr>
+                <h2>Color Classes</h2>
+                <div class="color-grid">
+                    <div class="color-red">
+                        <p>Red</p>
+                    </div>
+                    <div class="color-blue">
+                        <p>Blue</p>
+                    </div>
+                    <div class="color-blue-grey">
+                        <p>Blue Grey</p>
+                    </div>
+                    <div class="color-teal">
+                        <p>Teal</p>
+                    </div>
+                    <div class="color-yellow">
+                        <p>Yellow</p>
+                    </div>
+                    <div class="color-orange">
+                        <p>Orange</p>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Built-In Responsiveness -->
+            <section class="response">
+                <hr>
+                <h2>Built-In Responsiveness</h2>
+                <p class="first-p-center">Resize the page to see the effect!</p>
+                <div class="border">
+                    <div class="w3-half color-blue">
+                        <p>w3-half</p>
+                        <p>The w-3-half class uses half (50%) of the screen window.</p>
+                        <p>On small screens (max 600 pixels) it automatically resizes to full screen width.</p>
+                    </div>
+                    <p class="w3-half">w3-half</p>
+                </div>
+                <div class="border">
+                    <div class="w3-third color-green">
+                        <p>w3-third</p>
+                        <p>The w-3-third class uses one third (33.33%) of the screen window.</p>
+                        <p>On small screens (max 600 pixels) it automatically resizes to full screen width.</p>
+                    </div>
+                    <p class="w3-third">w3-third</p>
+                    <p class="w3-third">w3-third</p>
+                </div>
+                <div class="border">
+                    <div class="w3-quarter color-red">
+                        <p>w3-quarter</p>
+                        <p>The w-3-quarter class uses one quarter (25%) of the screen window.</p>
+                        <p>On small screens (max 600 pixels) it automatically resizes to full screen width.</p>
+                    </div>
+                    <p class="w3-quarter">w3-quarter</p>
+                    <p class="w3-quarter">w3-quarter</p>
+                    <p class="w3-quarter">w3-quarter</p>
+                </div>    
+            </section>
+            
+            <!-- Containers -->
+            <article class="containers">
+                <h2>Containers</h2>
+                <p class="first-p-center">Use containers to create headers, sections and footers.</p>
+                <header>
+                    <h2>Header</h2>
+                </header>
+                <!-- Use details here instead of javascript -->
+                <details>
+                    <summary>London is the capital city of England</summary>
+                    <h2>London</h2>
+                    <p>London is the capital city of England. It is the most populous city in the United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
+                    <p>Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.</p>
+                    <p>By the way, an open / close icon is automatically added to all details. You can also optionally add a summary. Look above!</p>
+                </details>
+                <footer>
+                    <h5>Footer</h5>
+                    <p>Footer information goes here</p>
+                </footer>
+            </article>
+            
+            <!-- Color Themes -->
+            <section class="themes">
+                <hr>
+                <h2>Color Themes</h2>
+                <p class="first-p-center">The color themes have been designed to work harmoniously with each other.</p>
+                <div class="color-themes">
+                    <div class="theme theme-indigo border">
+                        <ul>
+                            <li>
+                                <h3>Theme Indigo</h3>
+                            </li>
+                            <li>
+                                <h3>Movies 2014</h3>
+                            </li>
+                            <li>
+                                <h3>Frozen</h3>
+                                <p>The response to the animations was ridiculous</p>
+                            </li>
+                            <li>
+                                <h3>The Fault in Our Stars</h3>
+                                <p>Touching, gripping and genuinely well made</p>
+                            </li>
+                            <li>
+                                <h3>The Avengers</h3>
+                                <p>A huge success for Marvel and Disney</p>
+                            </li>
+                            <li>Next</li>
+                        </ul>
+                    </div>
+                    <div class="theme border">
+                        <ul>
+                            <li class="white-on-black">
+                                <h3>Theme</h3>
+                            </li>
+                            <li>
+                                <h3>Movies 2014</h3>
+                            </li>
+                            <li>
+                                <h3>Frozen</h3>
+                                <p>The response to the animations was ridiculous</p>
+                            </li>
+                            <li>
+                                <h3>The Fault in Our Stars</h3>
+                                <p>Touching, gripping and genuinely well made</p>
+                            </li>
+                            <li>
+                                <h3>The Avengers</h3>
+                                <p>A huge success for Marvel and Disney</p>
+                            </li>
+                            <li class="white-on-black">Next</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Cards -->
+            <section class="cards">
+                <hr>
+                <h3>Paper-like Cards with Shadows</h3>
+                <div class="paper-cards">
+                    <div class="card">
+                        <img src="https://www.w3schools.com/w3images/car.jpg" alt="vintage car">
+                        <p>w3-card</p>
+                    </div>
+                    <div class="card">
+                        <img src="https://www.w3schools.com/w3images/car.jpg" alt="vintage car">
+                        <p>w3-card-4</p>
+                    </div>
+                    <div class="card">
+                        <img src="https://www.w3schools.com/w3images/car.jpg" alt="vintage car">
+                        <p>w3-card-4</p>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Tables -->
+            <section class="tables">
+                <hr>
+                <h2>Tables</h2>
+                <p class="first-p-center">Don't worry. W3.CSS takes care of your tables.</p>
+                <table class="table">
+                    <tr>
+                        <th class="white-on-black">First Name</th>
+                        <th class="white-on-black">Last Name</th>
+                        <th class="white-on-black">Points</th>
+                    </tr>    
+                    <tr>
+                        <td>Jill</td>
+                        <td>Smith</td>
+                        <td>50</td>
+                    </tr>
+                    <tr>
+                        <td>Eve</td>
+                        <td>Jackson</td>
+                        <td>94</td>
+                    </tr>
+                    <tr>
+                        <td>Adam</td>
+                        <td>Johnson</td>
+                        <td>67</td>
+                    </tr>
+                </table>
+            </section>
+            
+            <!--Forms and Lists -->
+            <section class="forms">
+                <hr>
+                <h2>Forms and Lists</h2>
+                <div class="forms-lists">
+                    <form class="form" action="" method="get">
+                        <h2>Input Form</h2>
+                        <div class="input-personal">
+                            <input id="input-form-name" type="text" name="input-form-name" required>
+                            <label for="input-form-name">Name</label>
+                        </div>
+                        <div class="input-personal">
+                            <input id="input-form-email" type="email" name="input-form-email" required>
+                            <label for="input-form-email">Email</label>
+                        </div>
+                        <div class="input-personal">
+                            <input id="input-form-subject" type="text" name="input-form-subject" required>
+                            <label for="input-form-subject">Subject</label>
+                        </div>
+                        <div>
+                            <input id="input-form-milk" type="checkbox" checked>
+                            <label for="input-form-milk">Milk</label>
+                        </div>
+                        <div>
+                            <input id="input-form-sugar" type="checkbox">
+                            <label for="input-form-sugar">Sugar</label>
+                        </div>
+                        <div>
+                            <input id="input-form-lemon" type="checkbox" disabled>
+                            <label for="input-form-lemon">Lemon (Disabled)</label>
+                        </div>
+                        <div class="gender">
+                            <div>
+                                <input id="input-form-male" name="gender" value="male" type="radio">
+                                <label for="input-form-male">Male</label>
+                            </div>
+                            <div>
+                                <input id="input-form-female" name="gender" value="female" type="radio">
+                                <label for="input-form-female">Female</label>
+                            </div>
+                            <div>
+                                <input id="input-form-unknown" name="gender" value="unknown" type="radio" disabled>
+                                <label for="input-form-unknown">Don't know (Disabled)</label>
+                            </div>
+                        </div>
+                    </form>
+                    <div class="lists">
+                        <h2>Lists</h2>
+                        <ul class="list-1">
+                            <li>Jill</li>
+                            <li>Eve</li>
+                            <li>Adam</li>
+                        </ul>
+                        <ul class="list-2">
+                            <li class="white-on-black">Jill</li>
+                            <li>Eve</li>
+                            <li>Adam</li>
+                            <li>Steve</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Progress Bars -->
+            <section class="progress">
+                <hr>
+                <h2>Progess Bars</h2>
+                <div style="height: 2.5em; background-color: #f1f1f1">
+                    <div class="progress-bar" style="height: 2.5em; width: 5%; background-color: #000; color: #fff; text-align: center; padding-top: 0.5em;">5%</div>
+                </div>
+                <button class="white-on-black" onclick="animateProgressBar()">Click Me</button>
+            </section>
+
+            <!-- Slideshows -->
+            <section class="slideshows">
+                <hr>
+                <h2>Slideshows</h2>
+                <div class="slideshow">
+                    <button class="slide-left" onclick="slideImage(this.className)"><</button>
+                    <button class="slide-right" onclick="slideImage(this.className)">></button>
+                    <img src="https://www.w3schools.com/w3images/snow.jpg" alt="snow">
+                </div>
+                
+            </section>
+
+            <!-- Navigation -->
+            <section class="navigation">
+                <hr>
+                <h2>Navigation</h2>
+                <nav class="white-on-black">
+                    <a href="index.html">Home</a>
+                    <a href="#">Link 1</a>
+                    <div class="dropdown">
+                        <a>Dropdown <i class="fa fa-caret-down"></i></a>
+                        <ul class="dropdown-content">
+                            <li><a href="#">Link 1</a></li>
+                            <li><a href="#">Link 2</a></li>
+                            <li><a href="#">Link 3</a></li>
+                        </ul>
+                    </div>                 
+                </nav>
+            </section>
+
+            <!-- Accordians -->
+            <section class="accordians">
+                <hr>
+                <h2>Accordians</h2>
+                <!-- Use details here instead of javascript -->
+                <details class="accordian">
+                    <summary class="white-on-black">Open Section 1</summary>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p> 
+                </details>
+                <details class="accordian">
+                    <summary class="white-on-black">Open Section 2</summary>
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                </details>
+                <details class="accordian white-on-black">
+                    <summary>Open Section 3</summary>
+                    <p>Accordian with Images:</p>
+                    <figure>
+                        <img src="https://www.w3schools.com/w3css/img_snowtops.jpg">
+                        <figcaption>French Alps</figcaption>
+                    </figure>
+                </details>
+            </section>
+
+            <!-- Tabs -->
+            <section class="tabs">
+                <hr>
+                <h2>Tabs</h2>
+                <div>
+                    <div class="white-on-black">
+                        <button id="btn-london" class="white-on-black active-city" onclick="toggleCity(this.id)">London</button>
+                        <button id="btn-paris" class="white-on-black" onclick="toggleCity(this.id)">Paris</button>
+                        <button id="btn-toyko" class="white-on-black" onclick="toggleCity(this.id)">Tokyo</button>
+                    </div>
+                    <div class="city-tab"></div>
+                    <template class="city-london">
+                        <h2>London</h2>
+                        <p>London is the capital city of England.</p>
+                        <p>It is the most populous city in the United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
+                    </template>
+                    <template class="city-paris">
+                        <h2>Paris</h2>
+                        <p>Paris is the capital of France.</p>
+                        <p>The Paris area is one of the largest population centers in Europe, with more than 12 million inhabitants.</p>
+                    </template>
+                    <template class="city-toyko">
+                        <h2>Tokyo</h2>
+                        <p>Tokyo is the capital of Japan.</p>
+                        <p>It is the center of the Greater Tokyo Area, and the most populous metropolitan area in the world.</p>
+                    </template>
+                </div>
+            </section>
+
+            <!-- Buttons -->
+            <section class="buttons">
+                <hr>
+                <h2>Buttons</h2>
+                <div>
+                    <button class="button white-on-black">Button</button>
+                    <button class="button white-on-black">Button</button>
+                    <button class="button-disabled white-on-black" disabled>Button</button>
+                </div>
+                <div>
+                    <button class="button circle-button white-on-black"><i class="fa fa-plus "></i></button>
+                    <button class="button circle-button white-on-black"><i class="fa fa-plus "></i></button>
+                    <button class="circle-button black-on-white white-button"><i class="fa fa-plus"></i></button>
+                </div>
+                <div class="dropdown">
+                    <a>Dropdown <i class="fa fa-caret-down"></i></a>
+                    <ul class="dropdown-content">
+                        <li><a href="#">Link 1</a></li>
+                        <li><a href="#">Link 2</a></li>
+                        <li><a href="#">Link 3</a></li>
+                    </ul>
+                </div>  
+            </section>
+
+            <!-- Pagination -->
+            <section class="pagination">
+                <hr>
+                <h2>Pagination</h2>
+                <div>
+                    <a href="#" ><button class="black-on-white">«</button></a>
+                    <a href="#"><button class="white-on-black">1</button></a>
+                    <a href="#"><button class="black-on-white">2</button></a>
+                    <a href="#"><button class="black-on-white">3</button></a>
+                    <a href="#"><button class="black-on-white">4</button></a>
+                    <a href="#"><button class="black-on-white">5</button></a>
+                    <a href="#"><button class="black-on-white">»</button></a>
+                </div>
+            </section>
+
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer white-on-black">
+            <h3>Footer</h3>
+            <div class="powered">
+                <p>Powered by <a class="w3-css" href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+                <a href="index.html"><i class="fa fa-chevron-circle-up fa-lg"></i></a>
+            </div>
+            <p>Remember to check out our <a href="https://www.w3schools.com/w3css/w3css_references.asp" target="_blank"><button>W3.CSS Reference</button></a></p>
+        </footer>
+        <script src="js/main.js"></script>
+    </body>
